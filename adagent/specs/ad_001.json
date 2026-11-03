@@ -3,7 +3,7 @@
   "formats": ["9x16", "16x9"],
   "theme": "white_terracotta",
   "font": "intertight",
-  "pacing": "normal",
+  "pacing": "schnell",
   "patterns": {"hook": "photo_question", "turn": "what_if", "body": "blur_list", "payoff": "card", "cta": "free_preview", "angle": "loss"},
   "assets": {"hook": null, "screenshot": null, "placeholder_seed": 7},
   "scenes": [

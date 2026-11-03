@@ -598,7 +598,7 @@ class PunchScene(Scene):
             self.sizes[tok] = size
 
     def beats(self):
-        return [tm for _, tm, _ in self.words]
+        return [tm for l in self.lines for tm in l.word_t]
 
     def current(self, t):
         cur = None
@@ -815,8 +815,8 @@ class Ad:
 
     def warnings(self):
         w = []
-        if not 14.5 <= self.total <= 22:
-            w.append(f"Laenge {self.total:.1f} s liegt ausserhalb 15-20 s (Toleranz 14,5-22).")
+        if not 14.5 <= self.total <= 20.5:
+            w.append(f"Laenge {self.total:.1f} s liegt ausserhalb 15-20 s.")
         for sc in self.scenes:
             for l in sc.all_lines():
                 if "TODO" in l.text:

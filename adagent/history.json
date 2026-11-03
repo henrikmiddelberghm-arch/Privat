@@ -1,7 +1,7 @@
 [
   {
     "id": "ad_001",
-    "key": "loss|blur_list|free_preview|intertight|photo_question|normal|card|white_terracotta|blur_wipe+cut|what_if",
+    "key": "loss|blur_list|free_preview|intertight|photo_question|schnell|card|white_terracotta|blur_wipe+cut|what_if",
     "combo": {
       "hook": "photo_question",
       "turn": "what_if",
@@ -11,7 +11,7 @@
       "angle": "loss",
       "theme": "white_terracotta",
       "font": "intertight",
-      "pacing": "normal",
+      "pacing": "schnell",
       "transitions": "blur_wipe+cut"
     }
   },
