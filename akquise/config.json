@@ -1,0 +1,26 @@
+{
+  "marke": "customweddingsites.de",
+  "absender": "Henrik",
+  "website": "https://www.customweddingsites.de/",
+  "produkt": [
+    "Eigenes Hochzeits-Fotoalbum im Web",
+    "Gaeste scannen einen QR-Code, tragen ihren Namen ein und laden Fotos hoch - ohne App, ohne Konto",
+    "Bei jedem Foto steht, von wem es ist; Gaeste koennen eigene Fotos wieder loeschen",
+    "Das Paar sieht alles an einem Ort und kann alles herunterladen",
+    "Album mit Namen, Datum und Farben des Paars",
+    "Kostenlose Vorschau vor dem Kauf, ab 29 Euro"
+  ],
+  "angebot_an_partner": "Keine Provision, kein Rabatt: reine Kooperation / Kennenlernen, damit man spaeter zusammenarbeiten kann. Nutzen fuer den Partner: ein schoenes Extra fuer seine Paare, das ihm keine Arbeit macht.",
+  "kategorien": {
+    "Hochzeitsplaner": ["Hochzeitsplanerin {stadt}", "Hochzeitsplanung Agentur {stadt}"],
+    "Location": ["Hochzeitslocation {stadt}", "Hochzeitsscheune {stadt} Umgebung"],
+    "Fotograf": ["Hochzeitsfotograf {stadt} Reportage"],
+    "DJ": ["Hochzeits-DJ {stadt}"],
+    "Trauredner": ["freie Trauredner {stadt}", "freie Trauung Rednerin {stadt}"]
+  },
+  "staedte": ["Hamburg", "Berlin", "Muenchen", "Koeln", "Frankfurt am Main", "Duesseldorf", "Stuttgart", "Leipzig",
+              "Dresden", "Hannover", "Nuernberg", "Bremen", "Muenster", "Freiburg", "Mannheim", "Augsburg", "Bonn",
+              "Karlsruhe", "Kiel", "Rostock", "Regensburg", "Wuerzburg", "Osnabrueck", "Bielefeld", "Erfurt",
+              "Potsdam", "Lueneburg", "Heidelberg", "Ulm", "Trier"],
+  "pro_lauf": 20
+}
