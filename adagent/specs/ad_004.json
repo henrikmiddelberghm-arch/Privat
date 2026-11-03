@@ -1,0 +1,105 @@
+{
+  "id": "ad_004",
+  "formats": [
+    "9x16",
+    "16x9"
+  ],
+  "theme": "cream_sage",
+  "font": "intertight",
+  "pacing": "normal",
+  "patterns": {
+    "hook": "photo_statement",
+    "turn": "what_if",
+    "body": "split_before_after",
+    "payoff": "card_statement",
+    "cta": "outcome_cta",
+    "angle": "control",
+    "theme": "cream_sage",
+    "font": "intertight",
+    "pacing": "normal",
+    "transitions": "blur_wipe+cut+slide"
+  },
+  "assets": {
+    "hook": null,
+    "screenshot": null,
+    "placeholder_seed": 71
+  },
+  "scenes": [
+    {
+      "type": "photo_hook",
+      "transition": "cut",
+      "lines": [
+        {
+          "text": "Nach der Hochzeit:",
+          "role": "small"
+        },
+        {
+          "text": "Eure Fotos sind überall verstreut.",
+          "role": "big",
+          "accent": [
+            "verstreut."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "transition": "slide",
+      "lines": [
+        {
+          "text": "Was, wenn jeder Gast",
+          "role": "grey"
+        },
+        {
+          "text": "selbst",
+          "role": "huge"
+        },
+        {
+          "text": "entscheidet, was er teilt?",
+          "role": "italic"
+        }
+      ]
+    },
+    {
+      "type": "split",
+      "transition": "cut",
+      "before": "Fotos einzeln zusammensuchen",
+      "after": {
+        "text": "Alles an einem Ort",
+        "accent": [
+          "Ort"
+        ]
+      }
+    },
+    {
+      "type": "payoff_card",
+      "transition": "blur_wipe",
+      "lines": [
+        {
+          "text": "Gäste löschen eigene Fotos selbst.",
+          "role": "grey"
+        },
+        {
+          "text": "Ihr ladet alles herunter.",
+          "role": "big",
+          "accent": [
+            "alles"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta_end",
+      "transition": "slide",
+      "cta": {
+        "text": "Alle Fotos. Ein Album.",
+        "accent": [
+          "Album."
+        ]
+      },
+      "price": "Ab 29 €",
+      "brand": "MARKE",
+      "brand_end": ".de"
+    }
+  ]
+}

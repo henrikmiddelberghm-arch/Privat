@@ -1,0 +1,17 @@
+{
+  "id": "ad_002",
+  "formats": ["9x16", "16x9"],
+  "theme": "night_gold",
+  "font": "anton",
+  "pacing": "schnell",
+  "patterns": {"hook": "punch_words", "turn": "none", "body": "split_before_after+checklist", "payoff": "card", "cta": "free_preview", "angle": "simplicity"},
+  "assets": {"hook": null, "screenshot": null, "placeholder_seed": 8},
+  "scenes": [
+    {"type": "punch", "lines": [{"text": "Hunderte Fotos. Null Überblick.", "accent": ["Null"]}]},
+    {"type": "split", "transition": "slide", "before": "Fotos auf hundert Handys", "after": {"text": "Alles in einem Album", "accent": ["Album"]}},
+    {"type": "checklist", "transition": "wipe_up", "items": ["QR-Code scannen", "Namen eintragen", {"text": "Fotos hochladen", "accent": ["hochladen"]}]},
+    {"type": "payoff_card", "transition": "zoom", "lines": [{"text": "Ohne App. Ohne Konto.", "accent": ["Konto."]}]},
+    {"type": "cta_end", "transition": "flash", "cta": {"text": "Vorschau gratis ansehen.", "accent": ["gratis"]},
+     "price": "Ab 29 €", "brand": "MARKE", "brand_end": ".de"}
+  ]
+}

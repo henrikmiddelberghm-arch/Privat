@@ -1,0 +1,23 @@
+{
+  "id": "ad_001",
+  "formats": ["9x16", "16x9"],
+  "theme": "white_terracotta",
+  "font": "intertight",
+  "pacing": "normal",
+  "patterns": {"hook": "photo_question", "turn": "what_if", "body": "blur_list", "payoff": "card", "cta": "free_preview", "angle": "loss"},
+  "assets": {"hook": null, "screenshot": null, "placeholder_seed": 7},
+  "scenes": [
+    {"type": "photo_hook", "lines": [
+      {"text": "Was passiert, wenn …", "role": "small"},
+      {"text": "eure Fotos auf hundert Handys verschwinden?", "role": "big", "accent": ["verschwinden?"]}]},
+    {"type": "statement", "transition": "blur_wipe", "lines": [
+      {"text": "Was, wenn jedes", "role": "grey"},
+      {"text": "Handyfoto", "role": "huge"},
+      {"text": "zu einem gemeinsamen Album wird?", "role": "italic"}]},
+    {"type": "blur_list", "transition": "cut", "items": [
+      "QR-Code scannen.", "Ohne App, ohne Konto.", "Jedes Foto mit Namen.", "Alles an einem Ort."]},
+    {"type": "payoff_card", "transition": "cut", "lines": [{"text": "Euer Album.", "accent": ["Album."]}]},
+    {"type": "cta_end", "transition": "cut", "cta": {"text": "Erst kostenlos ansehen.", "accent": ["kostenlos"]},
+     "price": "Ab 29 €", "brand": "MARKE", "brand_end": ".de"}
+  ]
+}

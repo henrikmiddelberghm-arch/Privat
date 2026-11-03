@@ -1,0 +1,20 @@
+{
+  "name": "Hochzeits-Fotoalbum im Web",
+  "brand": "MARKE",
+  "brand_end": ".de",
+  "price_line": "Ab 29 €",
+  "hook_photo": null,
+  "screenshot": null,
+  "facts": [
+    "Eigenes Hochzeits-Fotoalbum im Web",
+    "Gaeste scannen auf der Hochzeit einen QR-Code",
+    "Gaeste tragen ihren Namen ein und laden ihre Fotos hoch",
+    "Ohne App und ohne Konto",
+    "Bei jedem Foto steht, von wem es ist",
+    "Jeder Gast kann seine eigenen Fotos wieder loeschen",
+    "Das Paar sieht alle Bilder an einem Ort und kann sie herunterladen",
+    "Das Album traegt Namen, Datum und Farben des Paars",
+    "Vor dem Kauf gibt es eine kostenlose Vorschau, erst danach entscheidet das Paar",
+    "Preis ab 29 Euro"
+  ]
+}

@@ -1,0 +1,3 @@
+build_tmp/
+__pycache__/
+out/*_preview_*.png

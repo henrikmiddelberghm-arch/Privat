@@ -1,0 +1,23 @@
+{
+  "id": "ad_003",
+  "formats": ["9x16", "16x9"],
+  "theme": "cream_sage",
+  "font": "serif",
+  "pacing": "ruhig",
+  "patterns": {"hook": "accent_statement", "turn": "imagine", "body": "punch_benefits", "payoff": "card_statement", "cta": "outcome_cta", "angle": "together"},
+  "assets": {"hook": null, "screenshot": null, "placeholder_seed": 9},
+  "scenes": [
+    {"type": "statement", "bg": "accent", "lines": [
+      {"text": "Eure Gäste fotografieren alles.", "role": "big"},
+      {"text": "Ihr seht fast nichts davon.", "role": "big", "accent": ["nichts"]}]},
+    {"type": "statement", "transition": "blur_wipe", "lines": [
+      {"text": "Stell dir vor:", "role": "grey"},
+      {"text": "Ein Album für alle Gäste.", "role": "big", "accent": ["alle"]}]},
+    {"type": "punch", "transition": "slide", "lines": [{"text": "Scannen. Hochladen. Fertig.", "accent": ["Fertig."]}]},
+    {"type": "payoff_card", "transition": "zoom", "lines": [
+      {"text": "Mit euren Namen und Farben.", "role": "grey"},
+      {"text": "Jedes Foto mit Absender.", "role": "big", "accent": ["Absender."]}]},
+    {"type": "cta_end", "transition": "wipe_up", "cta": {"text": "Erst Vorschau, dann entscheiden.", "accent": ["Vorschau,"]},
+     "price": "Ab 29 €", "brand": "MARKE", "brand_end": ".de"}
+  ]
+}

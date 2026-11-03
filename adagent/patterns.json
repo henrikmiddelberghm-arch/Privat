@@ -1,0 +1,82 @@
+{
+  "_info": "Musterbibliothek fuer den Ad-Video-Agenten. Jedes Muster hat eine Begruendung (why) mit Quelle. Neue Muster aus Recherche oder Ad-Analysen hier ergaenzen.",
+  "sources": {
+    "tiktok_creative": "https://ads.tiktok.com/business/en/guides/what-is-ad-creative-guide",
+    "hooks_first3s": "https://sovran.ai/blog/first-3-seconds-video-ad",
+    "hooks_formulas": "https://novoads.ai/en/blog/how-to-make-ad-hooks",
+    "hooks_apps": "https://admiral.media/video-ad-hooks-mobile-apps/",
+    "kinetic_retention": "https://www.designrush.com/best-designs/video/trends/8-25-seconds-to-impress-typography-animation-examples-that-maximize-viewer-retention",
+    "sound_off": "https://www.influencers-time.com/kinetic-typography-boost-video-retention-on-tiktok-and-reels/",
+    "creative_center": "https://segwise.ai/blog/tiktok-creative-center-guide-advertisers.md"
+  },
+  "principles": [
+    "Kernaussage in den ersten 3 Sekunden, Hook spaetestens bis Sekunde 6 (TikTok Creative Guidance) [tiktok_creative]",
+    "Erstes Bild muss ohne Ton funktionieren: Bewegung oder starkes Motiv im ersten Frame, Text traegt die Botschaft [hooks_first3s, sound_off]",
+    "Problem-zuerst-Hooks schlagen reine Zielgruppen-Ansprache; viele Gewinner starten mit negativer oder deklarativer Aussage statt Frage [hooks_apps, hooks_formulas]",
+    "Grosse, kontrastreiche Schrift, lesbar in < 0,3 s; nie mehr als ca. 6 Woerter pro Einblendung [kinetic_retention]",
+    "Marke und Angebot frueh und am Ende klar zeigen; ein einziger CTA [tiktok_creative]",
+    "Varianten testen: pro Ad nur 1-2 Dinge aendern, wenn man lernen will, was wirkt [creative_center]"
+  ],
+  "hooks": [
+    {"id": "photo_question", "scene": "photo_hook", "desc": "Emotionales Foto, darauf Wort-fuer-Wort eine Frage nach dem Problem. Problemwort in Akzentfarbe.", "why": "Starkes erstes Bild + Problem-zuerst [hooks_first3s, hooks_apps]"},
+    {"id": "photo_statement", "scene": "photo_hook", "desc": "Emotionales Foto, darauf eine harte negative Aussage (keine Frage), z. B. 'Die schoensten Fotos eurer Hochzeit seht ihr nie.' Keine erfundenen Statistiken.", "why": "Negative/deklarative Aussagen ueberwiegen bei Gewinner-Ads [hooks_formulas]"},
+    {"id": "accent_statement", "scene": "statement", "bg": "accent", "desc": "Vollflaechige Akzentfarbe, 1-2 Zeilen grosse Aussage, ein Wort in Kontrastfarbe.", "why": "Farbwechsel = Pattern Interrupt im ersten Frame, funktioniert ohne Ton [sound_off]"},
+    {"id": "punch_words", "scene": "punch", "desc": "3-6 einzelne Woerter knallen nacheinander bildschirmfuellend, Hintergrund wechselt pro Wort.", "why": "Hoher Rhythmus in Sekunde 0-2 haelt den Daumen an [kinetic_retention]"},
+    {"id": "stat_shock", "scene": "statement", "desc": "Grosse Zahl zaehlt hoch (role number), darunter kurzer Kontext.", "why": "Konkrete Zahl erzeugt Neugier-Luecke [hooks_formulas]"},
+    {"id": "split_contrast", "scene": "split", "desc": "Vorher/Nachher-Kontrast direkt im Hook: links/oben das Problem (durchgestrichen), rechts/unten die Loesung.", "why": "Outcome-first / Vorher-Nachher [hooks_first3s]"},
+    {"id": "dark_question", "scene": "statement", "bg": "fg", "desc": "Dunkler Hintergrund, kleine graue Einleitung + riesige Frage, Schluesselwort in Akzent.", "why": "Neugier-Luecke, hoher Kontrast [hooks_formulas]"}
+  ],
+  "turns": [
+    {"id": "what_if", "desc": "Kleine graue Zeile 'Was, wenn ...' + riesiges Akzentwort + kursive Aufloesung.", "roles": ["grey", "huge", "italic"]},
+    {"id": "imagine", "desc": "'Stell dir vor:' klein + grosse Loesungsaussage.", "roles": ["grey", "big"]},
+    {"id": "simple", "desc": "'Es geht auch einfach.' als grosse Zeile, ein Akzentwort.", "roles": ["big"]},
+    {"id": "none", "desc": "Kein Turn - direkt vom Hook in den Hauptteil (fuer schnelles Pacing).", "roles": []}
+  ],
+  "bodies": [
+    {"id": "blur_list", "scene": "blur_list", "desc": "3-4 Loesungspunkte als vertikaler Stapel, nur die aktive Zeile scharf, Stapel gleitet mit Spring pro Beat nach oben.", "why": "Ein Gedanke pro Beat, klarer Fokus [kinetic_retention]"},
+    {"id": "checklist", "scene": "checklist", "desc": "3-4 Punkte erscheinen untereinander mit animiertem Haken, vorherige bleiben stehen.", "why": "Listicle/Checkliste: schnell erfassbarer Nutzen"},
+    {"id": "punch_benefits", "scene": "punch", "desc": "Nutzen als Einzelwort-Schlaege (z. B. 'Scannen. Hochladen. Fertig.').", "why": "Rhythmus, sehr kurze Lesezeit"},
+    {"id": "stat_proof", "scene": "statement", "desc": "Zahl zaehlt hoch als Beweis (z. B. Fotos in einem Album) + Kontextzeile.", "why": "Konkrete Zahlen machen Nutzen greifbar"},
+    {"id": "split_before_after", "scene": "split", "desc": "Vorher (durchgestrichen) vs. Nachher als Mittelteil.", "why": "Kontrast macht den Nutzen sofort sichtbar"}
+  ],
+  "payoffs": [
+    {"id": "card", "scene": "payoff_card", "desc": "Kurzer, starker Satz (2-3 Woerter) + Produktkarte faehrt mit 3D-Kippung ein."},
+    {"id": "card_statement", "scene": "payoff_card", "desc": "Nutzenversprechen in 2 Zeilen (klein + gross) + Produktkarte."}
+  ],
+  "ctas": [
+    {"id": "free_preview", "desc": "CTA zur kostenlosen Vorschau, Endkarte mit Preis-Anker."},
+    {"id": "price_anchor", "desc": "CTA mit Preis zuerst ('Ab 29 € ...'), Endkarte mit 'Kostenlose Vorschau'."},
+    {"id": "outcome_cta", "desc": "CTA formuliert das Ergebnis ('Alle Fotos. Ein Album.'), Endkarte mit Angebot."}
+  ],
+  "angles": [
+    {"id": "loss", "desc": "Verlust: Fotos verschwinden auf vielen Handys, man sieht sie nie."},
+    {"id": "simplicity", "desc": "Einfachheit: QR-Code, ohne App, ohne Konto."},
+    {"id": "together", "desc": "Gemeinschaft: alle Gaeste tragen bei, jedes Foto mit Namen."},
+    {"id": "control", "desc": "Kontrolle/Vertrauen: Gaeste koennen eigene Fotos loeschen, Paar laedt alles herunter."},
+    {"id": "personal", "desc": "Persoenlich: Album mit euren Namen, Datum und Farben."},
+    {"id": "risk_free", "desc": "Risikofrei: erst kostenlose Vorschau, dann entscheiden, ab 29 €."}
+  ],
+  "themes": [
+    {"id": "white_terracotta", "bg": "#FFFFFF", "fg": "#111111", "muted": "#8A8A8A", "accent": "#D9633A"},
+    {"id": "cream_sage", "bg": "#F6F1E9", "fg": "#1E2A22", "muted": "#8C8A80", "accent": "#5F8B6E"},
+    {"id": "night_gold", "bg": "#121212", "fg": "#F5F2EA", "muted": "#8F8B83", "accent": "#E2B04A"},
+    {"id": "blush_wine", "bg": "#FBEDEC", "fg": "#2A1418", "muted": "#9D8486", "accent": "#A3243B"},
+    {"id": "white_cobalt", "bg": "#FFFFFF", "fg": "#0E1116", "muted": "#8A8F98", "accent": "#2F5BEA"},
+    {"id": "sand_ink", "bg": "#EFE6D8", "fg": "#14161C", "muted": "#8E8576", "accent": "#C2410C"}
+  ],
+  "fonts": [
+    {"id": "intertight", "bold": "InterTight-ExtraBold.ttf", "medium": "InterTight-Medium.ttf", "italic": "InterTight-LightItalic.ttf", "tracking": -0.025, "upper": false},
+    {"id": "anton", "bold": "Anton-Regular.ttf", "medium": "Archivo-Medium.ttf", "italic": "Archivo-LightItalic.ttf", "tracking": 0.0, "upper": true},
+    {"id": "archivo", "bold": "ArchivoBlack-Regular.ttf", "medium": "Archivo-Medium.ttf", "italic": "Archivo-LightItalic.ttf", "tracking": -0.03, "upper": false},
+    {"id": "serif", "bold": "DMSerifDisplay-Regular.ttf", "medium": "DMSans-Medium.ttf", "italic": "DMSerifDisplay-Italic.ttf", "tracking": -0.01, "upper": false},
+    {"id": "bricolage", "bold": "BricolageGrotesque-ExtraBold.ttf", "medium": "BricolageGrotesque-Medium.ttf", "italic": "Inter-LightItalic.ttf", "tracking": -0.03, "upper": false},
+    {"id": "spacegrotesk", "bold": "SpaceGrotesk-Bold.ttf", "medium": "SpaceGrotesk-Regular.ttf", "italic": "Inter-LightItalic.ttf", "tracking": -0.02, "upper": false},
+    {"id": "manrope", "bold": "Manrope-ExtraBold.ttf", "medium": "Manrope-Medium.ttf", "italic": "Inter-LightItalic.ttf", "tracking": -0.02, "upper": false}
+  ],
+  "transitions": ["cut", "blur_wipe", "wipe_up", "slide", "zoom", "flash"],
+  "pacing": [
+    {"id": "ruhig", "rate": 190, "gap": 0.2, "beat": 1.7},
+    {"id": "normal", "rate": 205, "gap": 0.12, "beat": 1.55},
+    {"id": "schnell", "rate": 218, "gap": 0.06, "beat": 1.5}
+  ]
+}
