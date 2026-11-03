@@ -20,6 +20,8 @@ Alles liegt in `adagent/`. Arbeitsverzeichnis fuer alle Befehle: `adagent/`.
 
 ## 0. Umgebung pruefen
 
+In Cloud-Sessions installiert `.claude/hooks/session-start.sh` alles automatisch beim Start. Nur falls etwas fehlt:
+
 ```bash
 which espeak-ng ffmpeg || (apt-get update -qq && apt-get install -y -qq espeak-ng mbrola mbrola-de7)
 ls /usr/share/mbrola/de7 && python3 -c "import PIL, numpy"
